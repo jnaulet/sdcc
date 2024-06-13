@@ -34,7 +34,8 @@ static unsigned long _divulong_test(void)
   volatile unsigned long a = 20000000ul;
   volatile unsigned long b = 1000ul;
 
-  return (a / b);
+  unsigned long c = (a / b);
+  return c;
 }
 
 static unsigned int _divuint_test(void)
@@ -42,7 +43,8 @@ static unsigned int _divuint_test(void)
   volatile unsigned int a = 42000u;
   volatile unsigned int b = 122u;
 
-  return (a / b);
+  unsigned int c = (a / b);
+  return c;
 }
 
 int main(void)
